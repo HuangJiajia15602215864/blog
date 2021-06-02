@@ -1,0 +1,10 @@
+<%- include header %>
+<ul class="archive">
+    <% posts.forEach(function(tag,index){ %>
+        <% if(tag){  %>
+            <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
+        <% } %>
+    <% }) %>
+</ul>
+
+<%- include footer %>
