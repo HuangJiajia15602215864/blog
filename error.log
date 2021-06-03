@@ -1,0 +1,12 @@
+[Thu Jun 03 2021 17:47:36 GMT+0800 (中国标准时间)]/
+MongoError: Topology was destroyed
+    at nextFunction (D:\练手项目\blog\node_modules\mongodb-core\lib\cursor.js:547:27)
+    at Cursor.next [as _next] (D:\练手项目\blog\node_modules\mongodb-core\lib\cursor.js:701:3)
+    at nextObject (D:\练手项目\blog\node_modules\connect-mongo\node_modules\mongodb\lib\cursor.js:680:8)
+    at Cursor.next (D:\练手项目\blog\node_modules\connect-mongo\node_modules\mongodb\lib\cursor.js:270:12)
+    at findOne (D:\练手项目\blog\node_modules\connect-mongo\node_modules\mongodb\lib\collection.js:1414:10)
+    at D:\练手项目\blog\node_modules\connect-mongo\node_modules\mongodb\lib\collection.js:1404:5
+    at new Promise (<anonymous>)
+    at Collection.findOne (D:\练手项目\blog\node_modules\connect-mongo\node_modules\mongodb\lib\collection.js:1403:10)
+    at D:\练手项目\blog\node_modules\connect-mongo\src\index.js:192:46
+    at runMicrotasks (<anonymous>)

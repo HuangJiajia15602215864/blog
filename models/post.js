@@ -1,5 +1,5 @@
 var mongodb = require('./db')
-var markdown = require('marked')
+//var markdown = require('marked')
 
 // 建立文章模型
 function Post(name, head, title, tags, post) {
@@ -80,9 +80,9 @@ Post.getTen = function (name, page, callback) {
                     if (err) {
                         return callback(err)
                     }
-                    docs.forEach(doc => {
-                        doc.post = markdown(doc.post)
-                    });
+                    // docs.forEach(doc => {
+                    //     doc.post = markdown(doc.post)
+                    // });
                     callback(null, docs, total)
                 })
             })
@@ -125,12 +125,12 @@ Post.getOne = function (name, day, title, callback) {
                             return callback(err)
                         }
                     })
-                    doc.post = markdown(doc.post)
-                    if (doc.comments) {
-                        doc.comments.forEach(function (comment) {
-                            comment.content = markdown(comment.content)
-                        })
-                    }
+                    // doc.post = markdown(doc.post)
+                    // if (doc.comments) {
+                    //     doc.comments.forEach(function (comment) {
+                    //         comment.content = markdown(comment.content)
+                    //     })
+                    // }
                     callback(null, doc)
                 }
             })
