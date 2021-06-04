@@ -103,3 +103,8 @@
 ::1 - - [Wed, 02 Jun 2021 10:32:27 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://localhost:3000/u/tutu/2021-6-2/%E9%9A%8F%E4%BE%BF%E4%BD%A0%E8%BD%AC%E8%BD%BD" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [Wed, 02 Jun 2021 10:32:30 GMT] "GET / HTTP/1.1" 200 4034 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
 ::1 - - [Wed, 02 Jun 2021 10:32:30 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"
+::1 - - [Fri, 04 Jun 2021 03:47:54 GMT] "GET / HTTP/1.1" 200 3549 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+::1 - - [Fri, 04 Jun 2021 03:47:54 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+::1 - - [Fri, 04 Jun 2021 03:48:15 GMT] "GET /favicon.ico HTTP/1.1" 500 1221 "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+::1 - - [Fri, 04 Jun 2021 03:48:22 GMT] "GET / HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"
+::1 - - [Fri, 04 Jun 2021 03:48:22 GMT] "GET /stylesheets/style.css HTTP/1.1" 304 - "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36"

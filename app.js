@@ -11,11 +11,18 @@ var logger = require('morgan');
 var fs = require('fs')
 var accessLog = fs.createWriteStream('access.log',{flags:'a'})
 var errorLog = fs.createWriteStream('error.log',{flags:'a'})
+var exphbs  = require('express-handlebars');
 
 var app = express();
 
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+//app.set('view engine', 'ejs');
+app.engine('hbs', exphbs({
+  layoutsDir: 'views',// 设置布局模版文件的目录为 views 文件夹
+  defaultLayout: 'layout',// 设置默认的页面布局模版为 layout.hbs 文件
+  extname: '.hbs'//  模版文件使用的后缀名
+}));
+app.set('view engine', 'hbs');// 设置模板引擎
 
 app.use(logger({stream:accessLog}));// 在终端显示日志
 app.use(express.json());// 解析请求体
